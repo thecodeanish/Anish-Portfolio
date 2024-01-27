@@ -1,0 +1,427 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+
+/* =====> Navigation Style <===== */
+nav{
+    background-color: #080808;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px 10%;
+    position:sticky;
+    top: 0;
+}
+nav h1{
+    font-size: 45px;
+    color:#ffffff;
+    font-weight: 600;
+    font-family: cursive;
+}
+nav h1 span{
+    color: #c102f6;
+}
+nav h1 p{
+    font-size: 20px;
+    font-family: 'Cedarville Cursive', cursive;;
+    font-weight: 500;
+    margin-left: 60px;
+    color: #ff004f;
+    line-height: 10px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    /* transition: transform 10s; */
+}
+nav ul li a::after{
+    content:' ';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position:absolute;
+    left: 0;
+    bottom: -9px;
+}
+nav ul li a:hover{
+    color: #bb4fee;
+    /* transform: scale(1.1); */
+} 
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* This is Header part */
+/* Background Image style type */
+ #header{
+    width: 100%;
+    height: 95vh;
+    background: rgb(0, 0, 0,0.2) url(/Images/Background1.jpg);
+    background-size:cover;
+    background-position: center;
+    z-index: -1;
+    background-blend-mode: darken;  
+}
+/* =====> Header Text Style <===== */
+.header-text{
+    font-size: 20px;
+    margin-left: 12%;
+    padding: 225px 0px 
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+.header-text p span{
+    color: #ff004f;
+}
+
+/* =====> About Section Start <===== */
+#About{
+    padding: 80px 0;
+    margin-left: 10%;
+    margin-top: 10px;
+    color:#a0a0a0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.about-col1{
+    flex-basis: 35%;
+}
+.about-col1 img{
+    width: 350px;
+    height: 450px;
+    border-radius:15px;
+}
+
+.about-col1 img:hover{
+    box-shadow: 3px -3px 7px #c102f6, -3px 3px 10px  #ff004f;
+}
+.about-col2{
+    margin-right: 10%;
+    margin-top: 3%;
+    flex-basis: 65%;
+}
+.about-sub-title{
+    font-size: 55px;
+    font-weight: 550;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.about-col2 p{
+    line-height: 25px;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 30px;
+    color: #ffffff;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+.tab-links::after{
+    content: ' ';
+    width: 0;
+    height: 2.5px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 15px 0;
+}
+.tab-contents ul li span{
+    color: #fb7095;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* =====> Style for Services <===== */
+#Services{
+    margin: 0% 7%;  
+    padding: 20px;
+}
+.services-sub-title{
+    font-size: 45px;
+    font-weight: 600;
+    color: #ffffff;
+    
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px; 
+    transition:background;
+    transition-duration: 0.4s;
+    transition: transform 0.5s;
+    
+}
+.services-list div:hover{
+    background: #fb0150;
+    transform: translateY(-10px);
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+
+/* =====> Portfolio Section Style <===== */
+#Portfolio{
+    margin: 0% 7%;
+    padding: 20px;
+}
+.portfolio-sub-title{
+    display:flex;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 60px;
+}
+.project img{
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+.project-list{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+} 
+.project{
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background:linear-gradient(rgba(0,0,0,0.7), #9619f6);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    transition: height 0.7s;
+}
+.layer h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #9619f6;
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+.project:hover .layer{
+    height: 100%;
+}
+.btnseemore{
+    display:block;
+    margin: 40px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ffffff;
+    transition:background 0.5s;
+}
+.btnseemore:hover{
+    background: #ff004f;
+}
+
+
+/* =====> Contect Section Style <===== */
+#Contact{
+    margin: 0% 7% ;
+    padding: 20px;
+}
+/* Contact First Column Style */
+.contact-col1{
+    flex-basis: 35%;
+    padding: 40px;
+    height: 60vh;
+    background-color: #262626;
+    border-radius: 22px;
+    /* box-shadow: 2px -2px 7px #c102f6 , -2px 2px 7px  #ff004f; */
+
+}
+.contact-col1:hover{
+    box-shadow: 3px -3px 7px #c102f6 , -3px 3px 7px  #ff004f;
+
+}
+.contact-sub-title{
+    font-size: 55px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.contact-col1 p{
+    margin-top: 15px;
+    font-size: 18px;
+}
+.contact-col1 p i{
+    margin-right: 10px;
+    font-size: 25px;
+    color: #ff004f;
+}
+.social-media-icons{
+    margin-top: 25px;
+}
+.social-media-icons a{
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffffff;
+    padding: 5px;
+    transition: transform 0.4s;
+}
+.social-media-icons a:hover{
+    color: #bb4fee;
+    transform: translateY(-5px);
+}
+.btn{
+    display:block;
+    margin: 40px auto;
+    width: fit-content;
+    justify-content: center;
+    border: 1px solid #ff004f;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ffffff;
+    transition:background 0.5s;
+}
+.btn:hover{
+    background: #c102f6;
+}
+
+/* Contact Second Column Style */
+.contact-col2{
+    flex-basis: 60%;
+}
+.contact-col2 form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.btnSubmit{
+    display:block;
+    margin: 40px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: black;
+}
+.btnSubmit:hover{
+    background: #ff004f;
+}
+form .btnSubmit2{
+    padding: 10px 50px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    background: #262626;
+    padding: 30px 0;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #c102f6;
+}
+
+
+/* CSS for Small Screen */

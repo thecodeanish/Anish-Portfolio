@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persnol Potfolio of Anish Kumar</title>
+    <!-- Link CSS File -->
+    <link rel="stylesheet" href="/portfoliostyle.css"> 
+    <!-- Link JavaScript File  -->
+    <script src="/portfoliojs.js"></script>
+    <!-- Link Awesome fount online link -->
+    <script src="https://kit.fontawesome.com/e9aaf9a6f0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link Google Font Style link -->
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Part -->
+    <nav>
+        <!-- <img src="Images/logo.png" class="logo"> -->
+        <h1 id="logo"><span>अ</span>nish<p>Portfolio.</p></h1>
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#Contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <!-- This div is add for backgroud work of our website-->  
+    <div id="header"> 
+        <div class="container">
+                <!-- Header Text Part-->
+                <div class="header-text">
+                    <h1>Hi, I'm <span>Anish</span><br>Kumar From <span>India</span></h1>
+                    <p>Aspiring Software <span>Developer</span></p>
+                </div>
+        </div>
+    </div> 
+    
+    <!-- Creating About Section-->
+
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <!-- Columan 1 -->
+                <div class="about-col1">
+                    <img src="/Images/MyImage.jpg">
+                </div>
+                <!-- Columan 2 -->
+                <div class="about-col2">
+                    <h1 class="about-sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero excepturi at debitis eum quae esse fugit voluptatibus odio voluptatum. Cumque?</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links"onclick="opentab('skills')" >Skills</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>Year 2024</span><br/>Master's in Computer Application at Chandigarh University Gharuan, Mohali</li>
+                            <li><span>Year 2021</span><br/>Batchelor's in Computer Application from Bihar University, Muzaffarpur Bihar</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br/>Designing Web/App interfaces</li>
+                            <li><span>Web Developer</span><br/>Web app Developer</li>
+                            <li><span>App Development</span><br/>Build Android apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    
+    <!-- Creating Service Section -->
+    <div id="Services">
+        <d class="container">
+            <h1 class="services-sub-title">My Services </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code" style="color: #cb66fa;"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos et esse quaerat ipsam numquam atque? Facere nisi labore amet consectetur!</p>
+                    <a href="#">Learm More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos et esse quaerat ipsam numquam atque? Facere nisi labore amet consectetur!</p>
+                    <a href="#">Learm More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple" style="color: #cb66fa;"></i>
+                    <h2>UI/UX Designing</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos et esse quaerat ipsam numquam atque? Facere nisi labore amet consectetur!</p>
+                    <a href="#">Learm More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Creating Portfolio Section -->
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="portfolio-sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="/Images/web2.jpg">
+                    <div class="layer">
+                        <h3>Web App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem illo beatae reprehenderit voluptatem perspiciatis dolores ducimus, nam dolore doloribus eius.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="/Images/ui_ux_img.jpg">
+                    <div class="layer">
+                        <h3>UI Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consequatur laudantium nisi esse enim tenetur a, incidunt commodi fugiat nobis!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="/Images/android2.jpg">
+                    <div class="layer">
+                        <h3>Android App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit expedita ad iste pariatur dolore asperiores porro dignissimos sunt praesentium cum!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btnseemore">See More</a>
+        </div>
+    </div>
+
+    <!---  Create Contect Section -->
+
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-col1">
+                    <h1 class="contact-sub-title">Contact Me</h1>
+                    <p> <i class="fa-sharp fa-solid fa-paper-plane"></i> rajanish315@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> +91 8969212157</p>
+                    <div class="social-media-icons">
+                        <a href="https://www.linkedin.com/in/anish-kumar-anish/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></i></a>    
+                    </div>
+                    <a href="/Images/CV_Anish.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-col2">
+                    <form method="post" name="form">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter Your Email" required>
+                        <textarea name="Message" rows="8" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btnSubmit btnSubmit2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Anish Design Made with <i class="fa-solid fa-leaf"></i> by Anish Learning</p>
+    </div>
+</body>
+</html>
